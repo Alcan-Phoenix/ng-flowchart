@@ -23,9 +23,16 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/lib/flowchart-lib/jquery.flowchart.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/lib/jquery/3.1.0/jquery.min.js",
+              "src/lib/jquery-ui/jquery-ui-1.12.1.custom/jquery-ui.min.js",
+              "src/lib/jquery.panzoom/3.2.2/jquery.panzoom.js",
+              "src/lib/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js",
+              "src/lib/flowchart-lib/jquery.flowchart.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -72,13 +79,20 @@
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/lib/flowchart-lib/jquery.flowchart.css"
             ],
-            "scripts": [],
+            "scripts": [
+              "../node_modules/jquery/dist/jquery.min.js",
+              "src/lib/flowchart-lib/jquery.flowchart.js",
+              "src/lib/jquery.panzoom/3.2.2/jquery.panzoom.js",
+              "src/lib/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js",
+              "src/lib/jquery-ui/jquery-ui-1.12.1.custom/jquery-ui.min.js" 
+            ],
             "assets": [
               "src/favicon.ico",
               "src/assets"
-            ]
+            ] 
           }
         },
         "lint": {
